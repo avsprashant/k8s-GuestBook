@@ -13,7 +13,7 @@ chown -R prashant:prashant /home/prashant/.kube
 
 # Deploy flannel network
 echo "[TASK 3] Deploy flannel network"
-su - prashant -c "kubectl create -f /prashant/kube-flannel.yml"
+su - prashant -c "kubectl create -f kube-flannel.yml"
 
 # Generate Cluster join command
 echo "[TASK 4] Generate and save cluster join command to /joincluster.sh"
